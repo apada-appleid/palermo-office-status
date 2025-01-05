@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .status {
+            font-size: 24px;
+            margin: 20px;
+        }
+        #statusIndicator {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        #toggleButton {
+            margin-top: 50px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="status">
+        <div id="statusIndicator" style="background-color: red;"></div>
+        <p id="statusText">Loading...</p>
+    </div>
+    <button id="toggleButton">Loading...</button>
+
+    <script src="app.js"></script>
+</body>
+</html>

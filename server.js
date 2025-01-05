@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = 8886;
 const statusFilePath = path.join(__dirname, 'status.txt');
 
 app.use(express.static(__dirname));

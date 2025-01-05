@@ -1,11 +1,22 @@
 let inOffice = false;
 
-document.addEventListener("DOMContentLoaded", () => {
+function checkStatus() {
   fetch("/status")
     .then((response) => response.json())
     .then((data) => {
       updateStatus(data.inOffice);
+    })
+    .catch(error => {
+      console.error('Error fetching status:', error);
     });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Initial check
+  checkStatus();
+  
+  // Check every 5 seconds
+  setInterval(checkStatus, 5000);
 
   document
     .getElementById("toggleButton")

@@ -1,0 +1,9 @@
+{
+  "name": "Palermo Office Status",
+  "short_name": "Palermo",
+  "description": "Check if someone is in Palermo office",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}
